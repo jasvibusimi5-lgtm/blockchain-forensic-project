@@ -257,10 +257,9 @@ http://localhost:5000
 
 | Name | Role |
 |---|---|
-| Member 1 | Project Lead |
-| Member 2 | Blockchain Developer |
-| Member 3 | Forensics Developer |
-| Member 4 | Frontend Developer |
+| Busimi Jasvi Durga 
+| Ayisetti Satya Lalita Gayatri
+This project was originally developed as a team project
 
 ---
 
