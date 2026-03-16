@@ -1,0 +1,62 @@
+[
+    {
+        "inputs": [
+            {"internalType": "string", "name": "_evidenceId", "type": "string"},
+            {"internalType": "string", "name": "_evidenceHash", "type": "string"},
+            {"internalType": "string", "name": "_osSource", "type": "string"},
+            {"internalType": "string", "name": "_forensicType", "type": "string"},
+            {"internalType": "string", "name": "_toolsUsed", "type": "string"}
+        ],
+        "name": "registerEvidence",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {"internalType": "string", "name": "_evidenceId", "type": "string"}
+        ],
+        "name": "getEvidence",
+        "outputs": [
+            {"internalType": "string", "name": "", "type": "string"},
+            {"internalType": "string", "name": "", "type": "string"},
+            {"internalType": "string", "name": "", "type": "string"},
+            {"internalType": "uint256", "name": "", "type": "uint256"},
+            {"internalType": "address", "name": "", "type": "address"}
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {"internalType": "string", "name": "_evidenceId", "type": "string"},
+            {"internalType": "string", "name": "_hash", "type": "string"}
+        ],
+        "name": "verifyHash",
+        "outputs": [
+            {"internalType": "bool", "name": "", "type": "bool"}
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTotalEvidence",
+        "outputs": [
+            {"internalType": "uint256", "name": "", "type": "uint256"}
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {"indexed": false, "internalType": "string", "name": "evidenceId", "type": "string"},
+            {"indexed": false, "internalType": "string", "name": "evidenceHash", "type": "string"},
+            {"indexed": false, "internalType": "uint256", "name": "timestamp", "type": "uint256"},
+            {"indexed": true, "internalType": "address", "name": "registeredBy", "type": "address"}
+        ],
+        "name": "EvidenceRegistered",
+        "type": "event"
+    }
+]

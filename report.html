@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forensic Report</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>📄 Forensic Investigation Report</h1>
+    <a href="/" class="btn btn-primary">← Back to Dashboard</a>
+  </div>
+  <div class="container">
+    <div class="step-box">
+      <h2>Report Details</h2>
+      <div id="report-content">Loading report...</div>
+    </div>
+    <div class="step-box">
+      <h2>Download Report</h2>
+      <a href="/api/download-report/json" class="btn btn-download">
+        Download JSON
+      </a>
+      <a href="/api/download-report/text" class="btn btn-download">
+        Download Text
+      </a>
+    </div>
+  </div>
+</body>
+</html>

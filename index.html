@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Forensic Tool</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>🔬 Cyber Forensic Evidence System</h1>
+    <p>Investigator: <strong>{{ investigator }}</strong> | 
+       Organization: <strong>{{ organization }}</strong></p>
+  </div>
+
+  <div class="container">
+
+    <!-- Step 1 -->
+    <div class="step-box">
+      <h2>🖥️ Step 1: Collect Evidence</h2>
+      <p>This will scan your computer memory, network, disk and logs</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="memory" checked> Memory</label>
+        <label><input type="checkbox" value="network" checked> Network</label>
+        <label><input type="checkbox" value="disk" checked> Disk</label>
+        <label><input type="checkbox" value="log" checked> Logs</label>
+      </div>
+      <button class="btn btn-primary" onclick="startForensics()">
+        🔍 Run Forensics
+      </button>
+      <div id="forensics-result" class="result-box"></div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-box">
+      <h2>⛓️ Step 2: Register on Blockchain</h2>
+      <p>This will save the evidence hash permanently on blockchain</p>
+      <button class="btn btn-secondary" onclick="registerBlockchain()">
+        ⛓️ Register Evidence
+      </button>
+      <div id="blockchain-result" class="result-box"></div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-box">
+      <h2>📄 Step 3: Generate AI Report</h2>
+      <p>This will use AI to write a professional forensic report</p>
+      <button class="btn btn-success" onclick="generateReport()">
+        📄 Generate Report
+      </button>
+      <div id="report-result" class="result-box"></div>
+    </div>
+
+    <!-- Download -->
+    <div class="step-box">
+      <h2>⬇️ Step 4: Download Report</h2>
+      <button class="btn btn-download" onclick="downloadReport('json')">
+        Download JSON Report
+      </button>
+      <button class="btn btn-download" onclick="downloadReport('text')">
+        Download Text Report
+      </button>
+    </div>
+
+    <!-- Session Status -->
+    <div class="step-box">
+      <h2>📊 Session Status</h2>
+      <button class="btn btn-info" onclick="checkStatus()">
+        Check Status
+      </button>
+      <div id="status-result" class="result-box"></div>
+    </div>
+
+  </div>
+
+  <script src="/static/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+flask 
+flask-cors 
+web3 
+python-dotenv 
+openai 
+psutil 
+groq 
+requests 
